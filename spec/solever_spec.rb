@@ -2,11 +2,10 @@ require './solver'
 
 describe Solver do
   describe '#factorial' do
-
     # Test 1 => passing a negative integer
     it 'raises an exception when given a negative number' do
-        solver = Solver.new
-        expect { solver.factorial(-5) }.to raise_error(StandardError)
+      solver = Solver.new
+      expect { solver.factorial(-5) }.to raise_error(StandardError)
     end
 
     # Test 2 => passion 0
@@ -22,7 +21,6 @@ describe Solver do
     end
   end
 
-
   describe '#reverse' do
     it 'returns the reverse of the given string' do
       new_str = Solver.new
@@ -30,25 +28,23 @@ describe Solver do
     end
   end
 
-
   describe '#fizzbuzz' do
-    #test 1 => when given a number that is divisible by 3
+    # test 1 => when given a number that is divisible by 3
     it 'returns fizz when given number is divisible by 3' do
       test1 = Solver.new
       expect(test1.fizzbuzz(3)).to eq('fizz')
     end
-   
-    #test 2 => when given a number that is divisible by 5
+
+    # test 2 => when given a number that is divisible by 5
     it 'returns buzz when given number is divisible by 5' do
       test2 = Solver.new
       expect(test2.fizzbuzz(5)).to eq('buzz')
     end
 
-    #test 3 => when given a number that is divisible by 3 and 5
+    # test 3 => when given a number that is divisible by 3 and 5
     it 'returns fizzbuzz when given number is divisible by 3 and 5' do
       test3 = Solver.new
       expect(test3.fizzbuzz(15)).to eq('fizzbuzz')
     end
-    end
-
+  end
 end

@@ -10,7 +10,7 @@ describe Solver do
     # Test 1 => passing a negative integer
     it 'raises an exception when given a negative number' do
         solver = Solver.new
-        expect(solver.factorial(-5)).to raise_standard_error(ArgumentError)
+        expect { solver.factorial(-5) }.to raise_error(StandardError)
     end
 
     # Test 2 => passion 0

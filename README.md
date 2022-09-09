@@ -15,7 +15,7 @@
 
 
 ### Getting started
-- In order to get a copy of this project you need to download it from https://github.com/Chrissiku/TDD-project
+- In order to get a copy of this project you need to download it from https://github.com/NabilHY/TDD-Project.git
 - Extract the zipped file and open it in your code editor
 ### Install
 - Run the command bellow in your terminal to get all required files
